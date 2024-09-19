@@ -2,7 +2,7 @@ import React from 'react';
 import FeedbackForm from './pages/FeedbackForm';
 import Header from './components/Header';
 import CarFinansingPage from './pages/CarFinansingPage';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
