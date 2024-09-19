@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/finanse-calc/static/css/main.7b01b137.css",
+    "main.js": "/finanse-calc/static/js/main.5e1032f2.js",
+    "static/media/default.webp": "/finanse-calc/static/media/default.f1ebced90ae7b0a5ff8c.webp",
+    "index.html": "/finanse-calc/index.html",
+    "static/media/getFetch.cjs": "/finanse-calc/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "main.7b01b137.css.map": "/finanse-calc/static/css/main.7b01b137.css.map",
+    "main.5e1032f2.js.map": "/finanse-calc/static/js/main.5e1032f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b01b137.css",
+    "static/js/main.5e1032f2.js"
+  ]
+}
