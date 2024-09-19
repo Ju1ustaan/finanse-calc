@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body, html {
+  font-family: "Inter", sans-serif;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+}
+
+.logo-islam {
+  width: 170px;
+  height: 46px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+.range-input::before {
+  content: '3';
+  position: absolute;
+  left: -10%;
+  top: -8px;
+  font-weight: 300;
+  color: #0092a1;
+}
+
+.range-input::after {
+  content: '60';
+  position: absolute;
+  right: -10%;
+  top: -8px;
+  font-weight: 300;
+  color: #0092a1;
+}
+
+.range-input[type="range"] {
+  -webkit-appearance: none; /* Убирает стандартный стиль браузера */
+  border-radius: 5px;
+  outline: none;
+  transition: 4s ease-in;
+}
+
+.range-input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px; /* Диаметр кружочка */
+  height: 20px;
+  border-radius: 50%; /* Закругляем, чтобы получился кружок */
+  border: #fdd400 solid 10px;
+  padding: 5px;
+  background: #fff;
+  cursor: pointer; /* Указатель мыши */
+}
+
+.range-input[type="range"]::-moz-range-thumb {
+  width: 20px; /* Диаметр кружочка */
+  height: 20px;
+  border-radius: 50%; /* Закругляем, чтобы получился кружок */
+  border: #fdd400 solid 10px;
+  padding: 5px;
+  background: #fff;
+  cursor: pointer; /* Указатель мыши */
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(-1, 1);
+  z-index: 999;
+
+  -webkit-transform: scale(-1, 1); /* Safari и старый Chrome */
+  -moz-transform: scale(-1, 1);    /* Firefox */
+  -o-transform: scale(-1, 1);      /* Opera */
+  -ms-transform: scale(-1, 1);     /* IE 9 */
+
+  -webkit-object-fit: cover;       /* Safari */
+  -moz-object-fit: cover;          /* Firefox */
+  -webkit-object-position: center; /* Safari */
+  -moz-object-position: center;    /* Firefox */
+  
+  background-size: cover;
+  background-position: center;
+}
