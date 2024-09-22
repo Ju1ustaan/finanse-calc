@@ -21,8 +21,8 @@ const DetailForm = ({ setShowSubmit }) => {
     const [r, setR] = useState(0)
     const [initialPaymentPercent, setInitialPaymentPercent] = useState(0)
     const { register, handleSubmit, setValue, getValues, formState: { errors }, watch, setError, clearErrors } = useForm();
-    const { data: startPercent, isError: startPercentError, isLoading: startPercentLoading } = useQuery({ queryKey: ['initialPaymentPercent'], queryFn: getStartPaymentPercent })
-    const { data: percent, isError: percentError, isLoading: percentLoading } = useQuery({ queryKey: ['percent'], queryFn: getPercent })
+    const { data: startPercent } = useQuery({ queryKey: ['initialPaymentPercent'], queryFn: getStartPaymentPercent })
+    const { data: percent } = useQuery({ queryKey: ['percent'], queryFn: getPercent })
 
     useEffect(() => {
         setR(0.015) 
@@ -44,7 +44,7 @@ const DetailForm = ({ setShowSubmit }) => {
             setYears(yearsArray(currentYear, 5));
         }
         setValue('releaseDate', years[0])
-    }, [watchRegion, currentYear]);
+    }, [watchRegion, currentYear, setValue, years]);
 
     const changeValues = (name, val) => {
         if (name === 'period' && val !== getValues('period')) setValue('period', val)
