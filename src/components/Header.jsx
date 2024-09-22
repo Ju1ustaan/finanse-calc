@@ -42,7 +42,7 @@ const Header = () => {
       <div className='flex items-center'>
         <NavLink className={({ isActive }) =>
           isActive ? "text-lg  text-yellow uppercase px-2 border-r-2" : "text-md  text-link uppercase px-2 border-r-2"
-        } to={'/call_back'}>Заказать обратный звонок</NavLink>
+        } to={'/'}>Заказать обратный звонок</NavLink>
         <NavLink className={({ isActive }) =>
           isActive ? "text-lg  text-yellow uppercase px-2 border-r-2" : "text-md  text-link uppercase px-2 border-r-2"
         } to={'/credit_calculator'}>Калькулятор</NavLink>

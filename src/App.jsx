@@ -9,7 +9,7 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path='/call_back' element={<FeedbackForm />} />
+        <Route path='/' element={<FeedbackForm />} />
         <Route path='/credit_calculator' element={<CarFinansingPage />} />
       </Routes>
     </Router>
