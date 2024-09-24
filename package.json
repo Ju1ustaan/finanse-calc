@@ -1,7 +1,6 @@
 {
   "name": "feedback-form",
   "version": "0.1.0",
-  "homepage": "https://ju1ustaan.github.io/finanse-calc/",
   "private": true,
   "dependencies": {
     "@react-input/mask": "^1.2.5",
